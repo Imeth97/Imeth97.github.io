@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<!-- site has 3 key sections: nav, main and about. -->
+<body>
+    <!-- menu bar -->
+    <nav>
+        
+        <h4>The N-Queens Problem Solver</h4>
+        
+        <ul>
+            <li><a href="#main">Solver</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- solver interface -->
+
+    <main id="main">
+
+        <div class="description">
+
+            <h1>
+                The Solver
+            </h1>
+
+            <p>
+                02/10/21: Please install chrome dev tools then go: right-click > inspect > 'console' on top right bar to see the output of a solution. 
+                Can solve for 3 &lt; n &lt; 9. There are no known solutions for n &lt; 4. <br>
+
+                <strong>Chrome</strong>: n>8 will exceed maximum stack size <br>
+                <strong>Safari</strong>: n>9 will exceed maximum stack size <br>
+                Maximum n will change for different browsers, depending on the browser's set maximum stack size. 
+                
+
+            </p>
+
+        </div>
+
+        <form>
+            <input type="number" id="n" placeholder="The value of n" value="4" min="4">
+            
+        
+            <input id="submit_n" type="button" value="Solve" onclick="give_soln()" />
+        </form>
+
+        <div class="solutions">
+            <script src="js/get_n.js"></script>
+
+        </div>
+
+
+
+    </main>
+
+
+    <!-- about section -->
+    <section id="about">
+
+        <div class="description">
+
+            <h3>
+                More on the N-Queens problem
+            </h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias consequuntur dolorem accusantium fugit, ut quos delectus sed rem deleniti et optio, sunt sequi officiis quia vitae quod quae unde ab ipsam odio nisi possimus modi. Sed aliquid consequatur officia nulla aperiam labore, harum temporibus atque! Illum distinctio, soluta voluptatum repudiandae exercitationem provident, quos repellendus odio, autem sunt incidunt unde! Beatae nihil soluta nostrum voluptas at et, earum placeat. Ipsam officia voluptates autem vero illum minima, repellendus provident optio doloribus dignissimos maiores, sint praesentium asperiores aliquid alias facilis, voluptatibus vel ratione? Dolores culpa voluptas est quia numquam quos suscipit alias aspernatur.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer>Imeth Kahawalage Don 2021</footer>
+
+    
+</body>
+</html>
